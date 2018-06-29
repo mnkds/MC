@@ -1,6 +1,2 @@
-Boston, New York
-Philadelphia, Newark
-Newark, Boston
-Trenton, Albany
-Stamford, Norwalk
-Norwalk, Bridgeport
+New York, Newark
+Newark, Bronx
