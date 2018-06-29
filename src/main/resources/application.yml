@@ -1,0 +1,4 @@
+server.port: 9696
+application:
+  static:
+    fileName: classpath:/static/routes.txt
