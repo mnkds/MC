@@ -14,14 +14,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/routes")
+@RequestMapping(value = "/connected")
 public class DemoController {
 
     @Autowired
     private DemoService service;
 
     @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<?> processRoute(@RequestParam("city1") String origin, @RequestParam("city2") String destination){
+    public ResponseEntity<?> processRoute(@RequestParam("origin") String origin, @RequestParam("destination") String destination){
 
         if(StringUtils.isEmpty(origin)|| StringUtils.isEmpty(destination))
             throw new EmptyReqParameterException("Request Parameters are Empty");
