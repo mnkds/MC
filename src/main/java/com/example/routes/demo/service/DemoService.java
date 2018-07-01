@@ -43,7 +43,7 @@ public class DemoService{
 
             if (node.equalsIgnoreCase(destination)){
                 visited.add(node);
-                storePsth(visited, path);
+                storePath(visited, path);
                 visited.removeLast();
                 break;
             }
@@ -58,11 +58,11 @@ public class DemoService{
         }
     }
 
-    private void storePsth(LinkedList<String> visited, ArrayList<String> path){
+    private void storePath(LinkedList<String> visited, ArrayList<String> path){
         String pathVal = "";
         for (String node : visited){
             pathVal = pathVal + node + " ";
         }
-        path.add(pathVal);
+        path.add(pathVal.trim());
     }
 }
